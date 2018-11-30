@@ -1,5 +1,5 @@
 # COMETの仕様
-http://www.ics.teikyo-u.ac.jp/wcasl/spec.html
+https://ja.wikipedia.org/wiki/CASL
 
 # アドレスの仕様
 - 1ワード16ビット
@@ -44,9 +44,12 @@ http://www.ics.teikyo-u.ac.jp/wcasl/spec.html
 ## 命令語のフィールド
 - OPフィールド(8bit)、GRフィールド(4bit)、XRフィールド(4bit)、ADRフィールド(16bit)
 - OPフィールドは命令の種類を表すオペコード。全23種。
-
+- GRフィールドは演算で使用するGRの番号を指定。分岐命令・スタック命令においては参照されない。
+- XRフィールドはアドレス修飾を行うGRの番号を指定
+- ADDRフィールドは処理対象のアドレスが指定され、このアドレスにXRフィールドの値をアドレス修飾を施したものが実行アドレスとなる
 
 ## ロード命令
+- LD GR, adr[, XR]
 
 ## ストア命令
 
