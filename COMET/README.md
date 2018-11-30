@@ -40,7 +40,7 @@ http://www.ics.teikyo-u.ac.jp/wcasl/spec.html
 
 # 命令の仕様
 - 命令語は全て固定長の2ワード
-- OPフィールド(4bit)、GRフィールド(4bit)、XRフィールド(4bit)、ADRフィールド(16bit)
+- OPフィールド(8bit)、GRフィールド(4bit)、XRフィールド(4bit)、ADRフィールド(16bit)
 - 命令は全23種
 
 
