@@ -1,5 +1,5 @@
 # COMETの仕様
-https://ja.wikipedia.org/wiki/CASL
+https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 
 # アドレスの仕様
 - 1ワード16ビット
