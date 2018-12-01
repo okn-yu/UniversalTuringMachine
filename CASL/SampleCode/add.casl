@@ -1,3 +1,6 @@
-LD    GR1,A        ;アドレスAの内容を汎用レジスターGR1にコピー
-ADDA  GR1,B        ;GR1 <-  GR1+ B
-ST GR1,C ;GR1の内容をアドレスCにコピー
+
+MAIN START
+   LD    GR1,1         
+   ADDA  GR1,1       
+   ST GR1,1 
+   END
