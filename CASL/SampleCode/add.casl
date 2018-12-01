@@ -1,4 +1,3 @@
-
 MAIN START
    LD    GR1,1         
    ADDA  GR1,1       
