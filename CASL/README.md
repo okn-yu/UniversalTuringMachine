@@ -28,7 +28,6 @@ MSG1   DS      1
        DC      ' to '
 MSG2   DS      1
        END
-
 ```
 
 ## マクロ命令 
