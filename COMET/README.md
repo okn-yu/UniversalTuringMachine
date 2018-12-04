@@ -48,6 +48,17 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 - XRフィールドはアドレス修飾を行うGRの番号を指定
 - ADDRフィールドは処理対象のアドレスが指定され、このアドレスにXRフィールドの値をアドレス修飾を施したものが実行アドレスとなる
 
+```
+; ハノイの塔を解くプログラム
+MAIN   START
+       LD      GR0,N
+       LD      GR1,A
+       LD      GR2,B
+       LD      GR3,C
+       CALL    HANOI       ; hanoi(3, A, B, C)
+       RET
+```
+
 ## ロード命令
 - LD GR, adr[, XR]
 
