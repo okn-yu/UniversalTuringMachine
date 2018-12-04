@@ -40,6 +40,7 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 
 # 命令の仕様
 - 命令語は全て固定長の2ワード
+- 各命令中の[]は省略可能
 
 ## 命令語のフィールド
 - OPフィールド(8bit)、GRフィールド(4bit)、XRフィールド(4bit)、ADDRフィールド(16bit)
@@ -61,6 +62,7 @@ MAIN   START
 
 ## ロード命令
 - LD GR, adr[, XR]
+- 有効アドレスの内容を指定した GRアドレスに設定する
 
 ## ストア命令
 
