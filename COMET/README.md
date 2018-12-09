@@ -75,11 +75,11 @@ MAIN   START
 
 ## 論理算術命令
 ```
-- ADD GR, adr [,XR]
-- SUB GR, adr [,XR]
-- AND GR, adr [,XR]
-- OR GR, adr [,XR]
-- EOR GR, adr [,XR]
+-算術加算: ADD GR, adr [,XR]
+-算術減算: SUB GR, adr [,XR]
+-論理積: AND GR, adr [,XR]
+-論理和: OR GR, adr [,XR]
+-排他的論理和: EOR GR, adr [,XR]
 ```
 
 - （GR）と（有効アドレス）に，指定した演算を施し，結果をGRに設定する。
