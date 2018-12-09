@@ -74,11 +74,13 @@ MAIN   START
 - GRの値によってFRを設定する
 
 ## 論理算術命令
-- ADD GR, adr [,XR]
-- SUB GR, adr [,XR]
-- AND　GR, adr [,XR]
-- OR　GR, adr [,XR]
-- EOR　GR, adr [,XR]
+```
+ADD GR, adr [,XR]
+SUB GR, adr [,XR]
+AND　GR, adr [,XR]
+OR　GR, adr [,XR]
+EOR　GR, adr [,XR]
+```
 
 - （GR）と（有効アドレス）に，指定した演算を施し，結果をGRに設定する。なお，算術減算では，（GR）から（有効アドレス）を減算する。
 - 演算結果によってFRを設定する。
