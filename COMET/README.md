@@ -62,29 +62,29 @@ MAIN   START
 
 ## ロード・ストア命令
 ```
-- ロード：LD GR, adr[, XR]
+ロード：LD GR, adr[, XR]
 ```
 - （有効アドレス）をGRアドレスに設定する
 
 ```
-- ストア：ST GR, adr［,XR］
+ストア：ST GR, adr［,XR］
 ```
 - （GR）アドレスが示す番地に格納する
 
 ## ロードアドレス命令
 ```
-- ロードアドレス：LEA GR, adr［,XR］
+ロードアドレス：LEA GR, adr［,XR］
 ```
 - 有効アドレスをGRに設定する
 - GRの値によってFRを設定する
 
 ## 論理算術命令
 ```
--算術加算: ADD GR, adr [,XR]
--算術減算: SUB GR, adr [,XR]
--論理積: AND GR, adr [,XR]
--論理和: OR GR, adr [,XR]
--排他的論理和: EOR GR, adr [,XR]
+算術加算: ADD GR, adr [,XR]
+算術減算: SUB GR, adr [,XR]
+論理積: AND GR, adr [,XR]
+論理和: OR GR, adr [,XR]
+排他的論理和: EOR GR, adr [,XR]
 ```
 
 - （GR）と（有効アドレス）に，指定した演算を施し，結果をGRに設定する。
@@ -95,8 +95,8 @@ MAIN   START
 
 ## シフト演算命令
 ```
--算術左シフト: SLA GR, adr [,XR]
--算術右シフト: SRA GR, adr [,XR]
+算術左シフト: SLA GR, adr [,XR]
+算術右シフト: SRA GR, adr [,XR]
 ```
 
 - (GR)を符号を除き有効アドレスで指定したビット数だけ左又は右にシフトする。
@@ -104,8 +104,8 @@ MAIN   START
 - シフトの結果によってFRを設定する。
 
 ```
--論理左シフト: SLL GR, adr [,XR]
--論理右シフト: SRL GR, adr [,XR]
+論理左シフト: SLL GR, adr [,XR]
+論理右シフト: SRL GR, adr [,XR]
 ```
 
 - (GR)を符号を含み有効アドレスで指定したビット数だけ左又は右にシフトする。
@@ -114,11 +114,11 @@ MAIN   START
 
 ## 分岐命令
 ```
--正分岐: JPZ adr [,XR]
--負分岐: JMI adr [,XR]
--非零分岐: JNZ adr [,XR]
--零分岐: JZE adr [,XR]
--無条件分岐: JMP adr [,XR]
+正分岐: JPZ adr [,XR]
+負分岐: JMI adr [,XR]
+非零分岐: JNZ adr [,XR]
+零分岐: JZE adr [,XR]
+無条件分岐: JMP adr [,XR]
 ```
 
 - 無条件分岐以外:FRの値によって有効アドレスに分岐する。分岐しない場合は次の命令に進む。
@@ -126,20 +126,20 @@ MAIN   START
 
 ## スタック操作命令
 ```
--プッシュ: PUSH adr [,XR]
--ポップ: POP GR
+プッシュ: PUSH adr [,XR]
+ポップ: POP GR
 ```
 - プッシュ:SPから1アドレス減算した後、有効アドレスを（SP）番地に格納する
 - ポップ:（SP）番地の内容をGRに設定した後、SPに1アドレス加算する。
 
 ## コール命令
 ```
--コール: CALL adr [,XR]
+コール: CALL adr [,XR]
 ```
 - SPから1をアドレス減算した後，PCの現在値に2をアドレス加算した値を（SP）番地に格納し，有効アドレスに分岐する。
 
 ## リターン命令
 ```
--リターン: RET
+リターン: RET
 ```
 - （SP）番地の内容を取り出した後SPに1をアドレス加算し，先に取り出した内容（番地）に分岐する（取り出した内容をPCに設定する）。
