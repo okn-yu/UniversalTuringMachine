@@ -40,17 +40,6 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 - XRフィールドはアドレス修飾を行うGRの番号を指定
 - ADDRフィールドは処理対象のアドレスが指定され、このアドレスにXRフィールドの値をアドレス修飾を施したものが実行アドレスとなる
 
-```
-; ハノイの塔を解くプログラム
-MAIN   START
-       LD      GR0,N
-       LD      GR1,A
-       LD      GR2,B
-       LD      GR3,C
-       CALL    HANOI       ; hanoi(3, A, B, C)
-       RET
-```
-
 ## ロード・ストア命令
 ```
 ロード：LD GR, adr[, XR]
@@ -135,6 +124,16 @@ MAIN   START
 ```
 - （SP）番地の内容を取り出した後SPに1をアドレス加算し，先に取り出した内容（番地）に分岐する（取り出した内容をPCに設定する）。
 
+```
+; ハノイの塔を解くプログラム
+MAIN   START
+       LD      GR0,N
+       LD      GR1,A
+       LD      GR2,B
+       LD      GR3,C
+       CALL    HANOI       ; hanoi(3, A, B, C)
+       RET
+```
 # データの仕様
 - データは「算術データ」「論理データ」「文字データ」の3種類からなる
 - データは全てワード単位からなる
