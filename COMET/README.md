@@ -51,18 +51,18 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 
 ## ロード・ストア命令
 ```
-ロード：LD GR, adr[, XR]
+ロード：LD GR, adr [,XR]
 ```
 - （有効アドレス）をGRアドレスに設定する
 
 ```
-ストア：ST GR, adr［,XR］
+ストア：ST GR, adr [,XR]
 ```
 - （GR）アドレスが示す番地に格納する
 
 ## ロードアドレス命令
 ```
-ロードアドレス：LEA GR, adr［,XR］
+ロードアドレス：LEA GR, adr [,XR]
 ```
 - 有効アドレスをGRに設定する
 - GRの値によってFRを設定する
