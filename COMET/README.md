@@ -48,12 +48,12 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 ```
 ロード：LD GR, adr [,XR]
 ```
-- （有効アドレス）をGRアドレスに設定する
+- （有効アドレス）をGRに設定する
 
 ```
 ストア：ST GR, adr [,XR]
 ```
-- GRを（有効アドレス）が示す番地に格納する
+- （GR）を有効アドレスが示す番地に格納する
 
 ## ロードアドレス命令
 ```
@@ -106,10 +106,10 @@ https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 
 ## 分岐命令
 ```
-正分岐: JPZ adr [,XR]
-負分岐: JMI adr [,XR]
-非零分岐: JNZ adr [,XR]
-零分岐: JZE adr [,XR]
+正分岐（FRが00または01）: JPZ adr [,XR]
+負分岐（FRが10）: JMI adr [,XR]
+非零分岐（FRが）: JNZ adr [,XR]
+零分岐（FRが00または10）: JZE adr [,XR]
 無条件分岐: JMP adr [,XR]
 ```
 
