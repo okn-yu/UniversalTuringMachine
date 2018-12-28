@@ -1,5 +1,6 @@
 # アセンブリ言語CASLの仕様
-CASLはCOMETのためのアセンブリ言語
+- CASLはCOMETのためのアセンブリ言語
+- CASLの仕様：https://www.jitec.ipa.go.jp/1_13download/hani.pdf
 
 ## 命令の種類
 - 疑似命令（4種類）
